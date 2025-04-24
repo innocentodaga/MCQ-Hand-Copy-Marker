@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    >
+    <TextView
+        android:id="@+id/questionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1"
+        android:textSize="16sp"
+        android:textColor="@color/primaryColor"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/login_border"
+        android:hint="Correct Answer"
+        android:padding="8dp"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/login_border"
+        android:hint="Points"
+        android:inputType="number"
+        android:padding="8dp"
+        android:layout_marginHorizontal="4dp"
+        android:layout_marginBottom="8dp"/>
+</LinearLayout>

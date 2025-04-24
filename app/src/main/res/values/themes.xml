@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MCQHardCopyMarker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/secondaryColor</item>
+        <item name="colorPrimaryVariant">@color/secondaryColor</item>
+        <item name="android:statusBarColor">@color/secondaryColor</item>
+
+    </style>
+
+    <style name="Theme.MCQHardCopyMarker" parent="Base.Theme.MCQHardCopyMarker" />
+
+<!--    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">-->
+<!--        // filling the background with a specific color-->
+<!--        <item name="windowSplashScreenBackground">#FAF3DE</item>-->
+<!--        //for logo-->
+<!--&lt;!&ndash;        <item name="windowSplashScreenAnimatedIcon">@drawable/scicul</item>&ndash;&gt;-->
+
+<!--        // Theme to be displayed after splashScreen-->
+<!--        <item name="postSplashScreenTheme">@style/Base.Theme.MCQHardCopyMarker</item>-->
+
+<!--    </style>-->
+</resources>

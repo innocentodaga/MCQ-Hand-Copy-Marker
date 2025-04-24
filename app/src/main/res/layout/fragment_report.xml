@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ReportFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Report"
+            android:textSize="18sp"
+            android:layout_marginTop="78dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/primaryColor"
+            android:fontFamily="@font/poppins_bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track the weekly performance"
+            android:textColor="@color/primaryColor"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="2dp"
+            android:layout_marginHorizontal="6dp"
+            app:cardCornerRadius="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/cardbg"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly Activity"
+                    android:textColor="@color/primaryColor"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/gray"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number of answer sheets scanned within week"
+                    android:textColor="@color/primaryColor"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="15sp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/lineChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="110dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="6dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:weightSum="1">  <!-- Add weightSum -->
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Recent Activity"
+                        android:textSize="16sp"
+                        android:gravity="start|center_vertical"                         android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/primaryColor"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="View All"
+                        android:textSize="14sp"
+                        android:gravity="end|center_vertical"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="2dp"
+                        android:background="@drawable/border"
+                        android:backgroundTint="#D043C6AC"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/primaryColor"
+                        android:layout_marginEnd="10dp"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/viewAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The latest answer sheets you've scanned and graded"
+                    android:textSize="15sp"
+                    android:layout_marginHorizontal="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/primaryColor"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewRecentActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

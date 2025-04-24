@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/nav_header"
+    android:layout_height="176dp"
+    android:gravity="top"
+    android:padding="10dp"
+    android:background="@color/secondaryColor"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/drawer_img"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ty"
+            android:theme="@style/roundedImageView" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/drawer_hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi"
+            android:textColor="@color/primaryColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:letterSpacing=".1"
+            />
+        <TextView
+            android:id="@+id/drawer_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textColor="@color/primaryColor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="10dp"
+            android:letterSpacing=".15"
+            />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/drawer_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to \nour App"
+            android:textColor="@color/primaryColor"
+            android:textSize="16sp"
+            android:letterSpacing=".1"
+            android:textStyle="italic|normal"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

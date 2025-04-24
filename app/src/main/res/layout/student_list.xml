@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="John Doe"
+            android:textSize="13sp"
+            android:textColor="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/studentId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="S001"
+            android:textSize="13sp"
+            android:textColor="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/studentClass"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="10A"
+            android:textSize="13sp"
+            android:textColor="@color/primaryColor" />
+
+        <TextView
+            android:id="@+id/studentSection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Science"
+            android:textSize="13sp"
+            android:textColor="@color/primaryColor" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/gray"
+        android:layout_marginHorizontal="2dp"/>
+
+</LinearLayout>

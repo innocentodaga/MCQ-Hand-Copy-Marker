@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <group
+        android:checkableBehavior="single"
+        >
+        <item android:id="@+id/home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home"
+            />
+        <item android:id="@+id/performance"
+            android:icon="@drawable/baseline_analytics_24"
+            android:title="Performance"
+            />
+        <item android:id="@+id/answerKeys"
+            android:icon="@drawable/baseline_library_books_24"
+            android:title="Answer Keys"
+            />
+        <item android:id="@+id/students"
+            android:icon="@drawable/baseline_groups_24"
+            android:title="Students"
+            />
+        <item android:id="@+id/settings"
+            android:icon="@drawable/baseline_settings_24"
+            android:title="Settings"
+            />
+        <item android:id="@+id/about"
+            android:icon="@drawable/baseline_phone_android_24"
+            android:title="About Us"
+            />
+        <item android:id="@+id/rate"
+            android:icon="@drawable/baseline_star_rate_24"
+            android:title="Rate Us"
+            />
+        <item
+            android:title=""
+            />
+        <item android:id="@+id/logOut"
+            android:icon="@drawable/baseline_logout_24"
+            android:title="Log Out"
+            />
+    </group>
+</menu>

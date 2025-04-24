@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AnswerKeys">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/secondaryColor"
+        android:paddingTop="20dp"
+        app:title="Hard Copy MCQ Marker"
+        app:titleTextColor="@color/white"
+        app:titleCentered="true"
+        app:navigationIcon="@drawable/baseline_arrow_back_24" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Answer Keys"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/primaryColor"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addKeysButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="+  Add Keys"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="#43C6AC"
+                android:background="@drawable/login_border"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Existing Answer Keys"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/primaryColor"
+                />
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

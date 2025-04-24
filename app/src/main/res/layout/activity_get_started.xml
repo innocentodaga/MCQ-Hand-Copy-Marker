@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".GetStarted">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/drawerimage"
+            android:scaleType="fitCenter"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cardimg"
+        android:layout_alignParentStart="true"
+        android:text="Enjoy the Marking \nWith Us"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/primaryColor"
+        android:fontFamily="@font/poppins_bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="40dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signinbtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Sign In"
+        android:background="@drawable/button_border"
+        android:backgroundTint="@color/primaryColor"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/signupbtn"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_semibold"
+        android:background="@drawable/button_border"
+        android:backgroundTint="@color/secondaryColor"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    </LinearLayout>
+</RelativeLayout>

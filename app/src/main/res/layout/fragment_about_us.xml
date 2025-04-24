@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AboutUsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="@color/secondaryColor"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:text="Welcome to Hard Copy MCQ Marker"
+                android:textColor="@color/primaryColor"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="18sp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/gray"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/white"
+                android:padding="4dp"
+                android:text="This is a description that will be used to describe our system"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border"
+                android:hint="Enjoy Marking with us"
+                android:textColorHint="@color/primaryColor"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--    <com.google.android.material.appbar.MaterialToolbar-->
+    <!--        android:id="@+id/toolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="75dp"-->
+    <!--        android:background="@color/secondaryColor"-->
+    <!--        android:paddingTop="20dp"-->
+    <!--        app:title="About The App"-->
+    <!--        app:titleTextColor="@color/white"-->
+    <!--        app:titleCentered="true"-->
+    <!--        app:navigationIcon="@drawable/baseline_arrow_back_24" />-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:cardElevation="4dp"-->
+<!--        android:layout_margin="8dp"-->
+<!--        app:cardCornerRadius="8dp"-->
+<!--        android:backgroundTint="#FC0E04BB"-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Hard Copy MCQ Marker"-->
+<!--            android:textSize="18sp"-->
+<!--            android:fontFamily="@font/poppins_bold"-->
+<!--            android:textColor="@color/secondaryColor"-->
+<!--            android:textAlignment="center"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:letterSpacing=".2"-->
+<!--            />-->
+<!--    </androidx.cardview.widget.CardView>-->
+    <TextView
+        android:id="@+id/scrollingText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Multiple-choice questions (MCQs) are widely recognized as an efficient assessment tool due to their ability to objectively evaluate large volumes of student responses within a short period (Parkes and Zimmaro, 2016). \n\nThey are extensively used in standardized testing and academic evaluations at various educational levels. Traditionally, grading MCQs has relied on Optical Mark Recognition (OMR) technology, which, despite its accuracy, presents significant cost and accessibility challenges, especially for institutions with limited resources (Meadows and Billington, 2005). Manual grading, while cost-effective, is time-consuming and prone to human error (Haladyna et al., 2002).
+\n \n
+Recent technological advancements have introduced computer vision and machine learning techniques that enable automated MCQ grading with high accuracy (Afifi and Hussain, 2019). However, most existing solutions still rely on specialized hardware, making them financially unfeasible for many institutions. Mobile phone-based solutions present a promising alternative by utilizing widely available smartphone cameras to process and grade MCQs efficiently (Nguyen et al., 2011). This research proposes the development of a mobile-based MCQ Auto-Marker system to address the limitations of traditional methods, enhancing efficiency, cost-effectiveness, and accessibility in educational assessment."
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/primaryColor"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:letterSpacing=".1"
+        android:scrollbars="vertical"
+        android:scrollbarSize=".05dp"
+        />
+</LinearLayout>
