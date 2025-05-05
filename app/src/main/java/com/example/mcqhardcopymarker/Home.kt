@@ -30,7 +30,7 @@ class Home : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         enableEdgeToEdge()
         setContentView(binding.root)
 
-        // Set full-screen mode with no limits
+//         Set full-screen mode with no limits
         window.setFlags(
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
