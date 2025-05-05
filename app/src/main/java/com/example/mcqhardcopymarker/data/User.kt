@@ -16,18 +16,3 @@ data class User(
     val institution: String
 )
 
-// Student's Table
-@Entity(tableName = "studentsTable")
-data class Students(
-    @PrimaryKey(autoGenerate = true)
-    val id: Int,
-    val studentNO: String,
-    val studentName: String,
-)
-
-// Answer's Table
-@Entity(tableName = "answerKeys")
-data class AnswerKeys(
-    @PrimaryKey(autoGenerate = true)
-    val int: Int,
-)
