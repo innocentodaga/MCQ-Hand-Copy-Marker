@@ -5,31 +5,29 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [User::class, Student::class, AnswerKey::class, AnswerKeySet::class], version = 4, exportSchema = false)
-abstract class UserDB : RoomDatabase() {
+@Database(entities = [User::class], version = 1, exportSchema = false)
+abstract class UserDB : RoomDatabase(){
 
     abstract fun userDao(): UserDao
-    abstract fun studentDao(): StudentDao
-    abstract fun answerKeyDao(): AnswerKeyDao
-    abstract fun answerKeySetDao(): AnswerKeySetDao
 
-    companion object {
+    companion object{
+
         @Volatile
-        private var INSTANCE: UserDB? = null
+        private  var INSTANCE: UserDB? = null
 
-        fun getDB(context: Context): UserDB {
-            return INSTANCE ?: synchronized(this) {
+        fun getDB(context: Context): UserDB{
+            val tempInstance = INSTANCE
+            if (tempInstance != null){
+                return tempInstance
+            }
+            synchronized(this){
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     UserDB::class.java,
                     "userdb"
-                )
-                    // Add fallback to destructive migration if you're still developing
-                    // REMOVE THIS IN PRODUCTION
-                    .fallbackToDestructiveMigration(false)
-                    .build()
+                ).build()
                 INSTANCE = instance
-                instance
+                return instance
             }
         }
     }

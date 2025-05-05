@@ -4,7 +4,7 @@ he Hard Copy Marker for Handwritten MCQ is an Android-based grading system that 
 
 ![Platform](https://img.shields.io/badge/platform-android-blue)
 ![Language](https://img.shields.io/badge/language-kotlin-orange)
-![License](https://img.shields.io/github/license/your-username/mcq-marker-app)
+
 
 An Android application built using Kotlin that marks handwritten MCQ answers from hard copy answer sheets. The app uses **CameraX** to capture images, **ML Kit** to extract text via OCR, and **Room** as the local database to store answers and compute scores.
 
