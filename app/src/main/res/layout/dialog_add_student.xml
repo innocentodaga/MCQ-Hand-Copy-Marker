@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/etStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="6dp"
+            android:padding="6dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/login_border"
+            android:hint="Student Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etStudentID"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="6dp"
+            android:padding="6dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/login_border"            android:hint="Student ID"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etClass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="6dp"
+            android:padding="6dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/login_border"            android:hint="Class"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etSection"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="6dp"
+            android:padding="6dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/login_border"            android:hint="Section"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#FB0F0F"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/white"
+                android:background="@drawable/login_border"                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/login_border"
+                android:text="+ Add"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:background="@drawable/input_login_bg"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp">
+
         <EditText
-            android:id="@+id/editTitle"
+            android:id="@+id/inputTitle"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:padding="8dp"
             android:background="@drawable/login_border"
             android:hint="Title"
-
+            android:textColor="@color/primaryColor"
             android:layout_marginBottom="8dp" />
 
         <EditText
-            android:id="@+id/editSubject"
+            android:id="@+id/inputSubject"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:padding="8dp"
+            android:textColor="@color/primaryColor"
             android:background="@drawable/login_border"
             android:hint="Subject"
             android:layout_marginBottom="8dp" />
@@ -36,21 +40,21 @@
             <TextView
                 android:id="@+id/editQuestions"
                 android:layout_width="wrap_content"
-                android:layout_marginStart="4dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
                 android:text="Questions"
+                android:layout_weight="2"
                 android:textSize="14sp"
                 android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/primaryColor"
-                />
+                android:layout_marginStart="4dp"/>
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/buttonAddQuestion"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
+                android:layout_weight="0.2"
                 android:text="+ Add Question"
-                android:layout_weight=".2"
+                android:textColor="@color/white"
                 android:padding="4dp"
                 android:fontFamily="@font/poppins_bold"
                 android:backgroundTint="@color/secondaryColor"
@@ -58,12 +62,25 @@
                 android:layout_marginStart="8dp"/>
         </LinearLayout>
 
-        <!-- Dynamic Questions Container -->
+        <!-- ONLY questions will be added here -->
         <LinearLayout
-            android:layout_marginVertical="6dp"
             android:id="@+id/questionsContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:orientation="vertical"
+            android:layout_marginVertical="6dp"/>
+
+        <!-- Save button OUTSIDE questions container -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSaveQuestions"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Save All Questions"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/secondaryColor"
+            android:background="@drawable/border"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_bold" />
+
     </LinearLayout>
 </ScrollView>

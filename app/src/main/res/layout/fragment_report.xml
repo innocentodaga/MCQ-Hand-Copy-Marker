@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none"
+    android:background="@color/gray"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ReportFragment">
     <LinearLayout
@@ -35,6 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardElevation="2dp"
+            android:background="@color/neutral"
             android:layout_marginHorizontal="6dp"
             app:cardCornerRadius="5dp">
             <LinearLayout
@@ -85,20 +87,22 @@
             android:layout_height="wrap_content"
             app:cardCornerRadius="5dp"
             app:cardElevation="2dp"
-            android:layout_marginBottom="110dp"
+            android:layout_marginBottom="130dp"
             android:layout_marginTop="20dp"
+            android:background="@color/white"
             android:layout_marginHorizontal="6dp"
             >
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/neutral"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_marginTop="10dp"
-                    android:weightSum="1">  <!-- Add weightSum -->
+                    android:weightSum="1">
 
                     <TextView
                         android:layout_width="0dp"

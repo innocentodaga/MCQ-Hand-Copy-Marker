@@ -10,5 +10,26 @@
     <color name="call_to_action">#D36135</color>
 
 
+    <color name="primary">#9b87f5</color>
+    <color name="primary_variant">#7E69AB</color>
+    <color name="secondary">#D6BCFA</color>
+    <color name="secondary_variant">#F1F0FB</color>
+    <color name="background">#FAFAFA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#F43F5E</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#1A1F2C</color>
+    <color name="on_background">#1A1F2C</color>
+    <color name="on_surface">#1A1F2C</color>
+    <color name="on_surface_variant">#6C7280</color>
+    <color name="on_error">#FFFFFF</color>
+    <color name="outline">#E2E8F0</color>
+
+    <!-- Additional colors -->
+    <color name="amber_500">#FFC107</color>
+    <color name="amber_600">#FFB300</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="rose_500">#F43F5E</color>
 
 </resources>

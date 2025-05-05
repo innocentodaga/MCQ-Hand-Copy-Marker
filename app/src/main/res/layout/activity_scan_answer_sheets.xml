@@ -7,13 +7,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/gray"
     tools:context=".ScanAnswerSheets">
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="70dp"
         android:background="@color/secondaryColor"
-        android:paddingTop="20dp"
+        android:paddingTop="10dp"
         app:title="Scan Answer Sheets"
         app:titleTextColor="@color/white"
         app:titleCentered="true"

@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/gray"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".StudentsFragment">
@@ -32,6 +33,7 @@
             android:layout_marginBottom="16dp" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addStudentButton"
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:background="@drawable/border"
@@ -47,7 +49,9 @@
             android:layout_height="45dp"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="8dp"
+            android:background="@color/neutral"
             android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/neutral"
             app:cardCornerRadius="8dp"
             app:cardElevation="2dp">
 
@@ -57,6 +61,7 @@
                 android:orientation="horizontal"
                 android:gravity="center_vertical"
                 android:paddingHorizontal="12dp"
+                android:background="@color/neutral"
                 >
 
                 <ImageView
@@ -85,6 +90,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardElevation="2dp"
+            android:background="@color/neutral"
             android:layout_marginHorizontal="6dp"
             app:cardCornerRadius="5dp">
 

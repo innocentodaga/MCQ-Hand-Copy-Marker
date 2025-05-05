@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
+    android:background="@color/gray"
     android:scrollbars="none"
     tools:context=".HomeFragment">
 
@@ -347,7 +348,7 @@
             app:cardCornerRadius="6dp"
             app:cardBackgroundColor="@color/neutral"
             app:cardElevation="4dp"
-            android:layout_marginBottom="110dp"
+            android:layout_marginBottom="130dp"
             >
             <ImageView
                 android:layout_width="35dp"

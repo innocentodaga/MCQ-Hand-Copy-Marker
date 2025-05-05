@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/gray"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".AnswerKeys">
 
@@ -30,9 +31,17 @@
                 android:layout_height="wrap_content"
                 android:text="Answer Keys"
                 android:textSize="18sp"
-                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
                 android:fontFamily="@font/poppins_bold"
                 android:textColor="@color/primaryColor"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#792E3E8C"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginBottom="10dp"
                 />
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/addKeysButton"
@@ -56,11 +65,13 @@
                 android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/primaryColor"
                 />
-            <ListView
+            <!-- In fragment_answer_keys.xml -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/answerKeySetsRecyclerView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
-                />
+                android:layout_height="match_parent"
+                android:padding="8dp"/>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

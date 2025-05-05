@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- In item_answer_key_set.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="6dp"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="16sp"
+        android:textColor="@color/primaryColor"/>
+
+    <TextView
+        android:id="@+id/textSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="14sp"
+        android:textColor="@color/secondaryColor"/>
+</LinearLayout>
