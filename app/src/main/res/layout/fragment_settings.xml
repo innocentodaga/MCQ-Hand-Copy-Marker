@@ -5,26 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/neutral"
+    android:id="@+id/main"
     tools:context=".SettingsFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="10dp">
 
             <!-- Profile Section -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                app:cardBackgroundColor="@color/gray"
-                app:cardCornerRadius="12dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="@color/neutral"
+                app:cardCornerRadius="8dp"
+                android:layout_marginHorizontal="5dp"
                 app:cardElevation="2dp">
 
                 <LinearLayout
@@ -61,8 +64,7 @@
                             android:layout_width="48dp"
                             android:layout_height="48dp"
                             android:src="@drawable/ty"
-                            app:civ_border_color="@color/primary"
-                            app:civ_border_width="2dp" />
+                             />
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -93,7 +95,7 @@
                             android:id="@+id/btn_edit_profile"
                             style="@style/Widget.Material3.Button.OutlinedButton"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="40dp"
                             android:text="Edit"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -104,9 +106,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                app:cardBackgroundColor="@color/gray"
-                app:cardCornerRadius="12dp"
+                android:layout_marginBottom="8dp"
+                app:cardBackgroundColor="@color/neutral"
+                app:cardCornerRadius="8dp"
+                android:layout_marginHorizontal="5dp"
                 app:cardElevation="2dp">
 
                 <LinearLayout
@@ -227,9 +230,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="10dp"
                 app:cardBackgroundColor="@color/surface"
-                app:cardCornerRadius="12dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginHorizontal="5dp"
                 app:cardElevation="2dp">
 
                 <LinearLayout
@@ -301,9 +305,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="8dp"
                 app:cardBackgroundColor="@color/surface"
-                app:cardCornerRadius="12dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginHorizontal="5dp"
                 app:cardElevation="2dp">
 
                 <LinearLayout
@@ -432,9 +437,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="8dp"
                 app:cardBackgroundColor="@color/surface"
-                app:cardCornerRadius="12dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginHorizontal="5dp"
                 app:cardElevation="2dp">
 
                 <LinearLayout
@@ -506,9 +512,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="8dp"
                 app:cardBackgroundColor="@color/surface"
-                app:cardCornerRadius="12dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginHorizontal="5dp"
                 app:cardElevation="2dp">
 
                 <LinearLayout
@@ -543,7 +550,7 @@
                             android:id="@+id/btn_export_data"
                             style="@style/Widget.Material3.Button.OutlinedButton"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="40dp"
                             android:layout_weight="1"
                             android:layout_marginEnd="4dp"
                             android:text="Export Data"
@@ -554,7 +561,7 @@
                             android:id="@+id/btn_import_data"
                             style="@style/Widget.Material3.Button.OutlinedButton"
                             android:layout_width="0dp"
-                            android:layout_height="wrap_content"
+                            android:layout_height="40dp"
                             android:layout_weight="1"
                             android:layout_marginStart="4dp"
                             android:text="Import Data"
@@ -600,10 +607,13 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="126dp"
                 app:cardBackgroundColor="@color/surface"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="2dp">
+                app:cardCornerRadius="10dp"
+                android:layout_marginHorizontal="5dp"
+                app:cardElevation="2dp"
+                >
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
